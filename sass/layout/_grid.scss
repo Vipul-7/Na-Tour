@@ -1,4 +1,10 @@
-.row{
-    // display: flex;
-    justify-content: center;
+.row {
+  justify-content: center;
+  display: grid;
+  //   background-color: red;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, min-content));
+  grid-column-gap: 5rem;
+
+  [class^="col-"] {
+  }
 }
