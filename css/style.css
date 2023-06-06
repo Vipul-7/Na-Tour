@@ -221,6 +221,48 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    font-size: 2rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    height: 50rem;
+    transition: all 0.8s ease; }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff773e); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen; }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff773e), url(../img/nat-5.jpg); }
+    .card__picture--2 {
+      background-image: url(../img/nat-.jpg); }
+    .card__picture--3 {
+      background-image: url(../img/nat-5.jpg); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.79), rgba(40, 180, 133, 0.799)), url("../img/hero.jpg");
@@ -246,16 +288,20 @@ body {
 
 .row {
   display: grid;
-  justify-content: center;
+  justify-content: center; }
+
+.row-2 {
   grid-template-columns: repeat(auto-fit, minmax(50rem, min-content));
   grid-column-gap: 5rem; }
 
 .row-4 {
-  display: grid;
-  justify-content: center;
   align-items: center;
   grid-column-gap: 6rem;
   grid-template-columns: repeat(auto-fit, minmax(22.5rem, min-content)); }
+
+.row-3 {
+  grid-template-columns: repeat(auto-fit, minmax(30rem, min-content));
+  grid-column-gap: 5rem; }
 
 .section-about {
   background-color: #f7f7f7;
@@ -270,3 +316,8 @@ body {
   margin-top: -9rem; }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -9rem; }

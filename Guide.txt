@@ -1,0 +1,5 @@
+[1] clip-path
+[2] background-clip
+[3] outline and outline-offset
+[4] linear-gradient
+[5] transform -> skewed(0deg)
