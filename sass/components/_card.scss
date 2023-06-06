@@ -1,0 +1,83 @@
+.card {
+  // Functionality
+  perspective: 150rem; // this is for the 3d effect
+  position: relative;
+  height: 50rem;
+
+  &__side {
+    font-size: 2rem;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; // this is for the back side of the card
+    -webkit-backface-visibility: hidden;
+
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    height: 50rem;
+    transition: all 0.8s ease;
+
+    &--front {
+      background-color: $color-white;
+    }
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        );
+      }
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        );
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  // Content
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen; // this is for the background image to blend with the background color
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        ),
+        url(../img/nat-5.jpg);
+    }
+    &--2 {
+      background-image: url(../img/nat-.jpg);
+    }
+    &--3 {
+      background-image: url(../img/nat-5.jpg);
+    }
+  }
+}
