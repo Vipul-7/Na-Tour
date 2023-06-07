@@ -3,6 +3,11 @@
   justify-content: center;
 }
 
+.row-1{
+  grid-template-columns: repeat(auto-fit, minmax(89%, min-content));
+  grid-column-gap: 5rem;
+}
+
 .row-2 {
   grid-template-columns: repeat(auto-fit, minmax(50rem, min-content));
   grid-column-gap: 5rem;

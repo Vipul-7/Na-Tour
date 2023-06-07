@@ -4,3 +4,6 @@
 [4] linear-gradient
 [5] transform -> skewed(0deg)
 [6] animation fill mode in button file
+[7] Box-decoration-break {at card.scss}
+[8] background-blend-mode {at card.scss}
+[9] shape-outside {at story.scss}
