@@ -7,3 +7,4 @@
 [7] Box-decoration-break {at card.scss}
 [8] background-blend-mode {at card.scss}
 [9] shape-outside {at story.scss}
+[10] linear-gradient more features {home.scss}

@@ -3,6 +3,10 @@
   justify-content: center;
 }
 
+.row-booking{
+  grid-template-columns: repeat(auto-fit, minmax(78%, min-content));
+}
+
 .row-1{
   grid-template-columns: repeat(auto-fit, minmax(89%, min-content));
   grid-column-gap: 5rem;
