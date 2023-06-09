@@ -11,4 +11,4 @@
 [11] input::-webkit-input-placeholder {form.scss}
 [12] input:invalid
 [13] input:placeholder-shown
-[14] adjacent sibling selector (+,~)
+[14] adjacent sibling selector (+,~) 
