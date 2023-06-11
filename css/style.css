@@ -15,6 +15,10 @@ body {
   box-sizing: border-box;
   position: relative; }
 
+::selection {
+  background-color: #55c57a;
+  color: #fff; }
+
 @keyframes moveToLeft {
   0% {
     opacity: 0;

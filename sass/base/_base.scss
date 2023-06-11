@@ -1,4 +1,3 @@
-
 *,
 *::after,
 *::before {
@@ -16,7 +15,12 @@ html {
   font-size: 62.5%;
 }
 
-body{
+body {
   box-sizing: border-box;
   position: relative;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
 }
